@@ -1,5 +1,8 @@
 # 配置Vue初始化项目
 
+## 技术栈
+Vue2.5 + Vue-router3.0 + Vuex3.0 + SASS + Node.js(express) + Karma + Mocha + Chai + ESLint + ES6 + Webpack
+
 ## 1更改配置
 创建配置文件`vue.vue.config.js`
 ```
