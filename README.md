@@ -37,7 +37,7 @@ indent_style = tab
 
 ## 5单元测试
 ```
-npm i karma karma-mocha karma-chai -D
+npm i karma mocha chai karma-mocha karma-chai -D
 ```
 
 ## 6路由
@@ -50,4 +50,7 @@ npm i vue-router -S
 npm i axios -S
 ```
 
-## 7Store
+## 7Vuex
+```
+npm i vuex -S
+```

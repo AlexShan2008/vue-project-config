@@ -1,27 +1,31 @@
 <template>
  <div>
-   <h1>Home</h1>
+   <h1>{{title}}</h1>
+   <p>{{content}}</p>
    <router-link to="/profile">To Profile</router-link>
  </div>
 </template>
 
 <script>
- export default {
-   data () {
-     return {
+import { mapState, mapMutations } from "vuex";
 
-     }
-   },
-   methods: {
-
-   },
-   components: {
-
-   },
- }
+export default {
+  name: "home",
+  data() {
+    return {};
+  },
+  methods: {
+    ...mapMutations([
+      'increment', // 将 `this.increment()` 映射为 `this.$store.commit('increment')`
+    ]),
+  },
+  components: {},
+  computed: mapState({
+    title: state => state.title,
+    content: state => state.content,
+  })
+};
 </script>
 
 <style lang='scss' scoped>
-
- 
 </style>

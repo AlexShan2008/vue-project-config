@@ -1,14 +1,12 @@
 import Vue from 'vue';
-import VueRouter from 'vue-router';
-import routes from './router';
-import store from './store';
+import router from './router';
+import notify from './plugin/notify';
+import store from './store/index';
 import App from './App.vue';
 
-import './config/rem';
-
-Vue.use(VueRouter);
-const router = new VueRouter({
-  routes,
+// 使用notify插件
+Vue.use(notify, {
+  delay: 5000,
 });
 
 new Vue({
@@ -16,3 +14,4 @@ new Vue({
   store,
   render: h => h(App),
 }).$mount('#app');
+

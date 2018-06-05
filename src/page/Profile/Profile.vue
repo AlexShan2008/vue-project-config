@@ -1,16 +1,23 @@
 <template>
  <div>
-  <h1>Profile</h1>
+  <h1>{{msg}}</h1>
    <router-link to="/home">To Home</router-link>
+   <button @click="show">notify</button>
  </div>
 </template>
 
 <script>
 export default {
   data() {
-    return {};
+    return {
+      msg: 'Profile'
+    };
   },
-  methods: {},
+  methods: {
+    show(){
+      this.$notify('我是弹窗',{delay:1000});
+    }
+  },
   components: {}
 };
 </script>
