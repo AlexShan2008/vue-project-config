@@ -1,6 +1,6 @@
 <template>
  <div>
-   <h1>{{title}}</h1>
+   <h1>{{t}}</h1>
    <p>{{content}}</p>
    <router-link to="/profile">To Profile</router-link>
  </div>
@@ -10,7 +10,7 @@
 import { mapState, mapMutations } from "vuex";
 
 export default {
-  name: "home",
+  name: "Home",
   data() {
     return {};
   },
@@ -19,9 +19,11 @@ export default {
       'increment', // 将 `this.increment()` 映射为 `this.$store.commit('increment')`
     ]),
   },
-  components: {},
+  components: {
+
+  },
   computed: mapState({
-    title: state => state.title,
+    t: state => state.title,
     content: state => state.content,
   })
 };

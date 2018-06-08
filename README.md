@@ -1,12 +1,12 @@
 # 配置Vue初始化项目
 
 ## 技术栈
-Vue2.5 + Vue-router3.0 + Vuex3.0 + SASS + Node.js(express) + Karma + Mocha + Chai + ESLint + ES6 + Webpack
+Vue2.5 + Vue-router3.0 + Vuex3.0 + SASS + Node.js(express) + axios + Karma + Mocha + Chai + ESLint + ES6/7 + Webpack
 
-## 1更改配置
-创建配置文件`vue.vue.config.js`
+## 1更改项目配置
+创建配置文件[`vue.config.js`](https://cli.vuejs.org/config/)
 ```
-vue.vue.config.js
+vue.config.js
 ```
 ## 2使用sass
 ```
@@ -38,7 +38,7 @@ indent_style = tab
 
 ```
 
-## 5单元测试
+#1# 5单元测试
 ```
 npm i karma mocha chai karma-mocha karma-chai -D
 ```

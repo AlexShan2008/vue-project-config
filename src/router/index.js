@@ -11,7 +11,7 @@ export default new VueRouter({
     path: '/',
     component: App,
     children: [
-      { path: '/home', component: Home },
+      { path: '/', component: Home },
       { path: '/profile', component: Profile },
     ],
   }],
